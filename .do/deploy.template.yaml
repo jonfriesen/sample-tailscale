@@ -1,0 +1,12 @@
+spec:
+  name: sample-tailscale
+  services:
+  - dockerfile_path: Dockerfile
+    git:
+      branch: main
+      repo_clone_url: https://github.com/jonfriesen/sample-tailscale.git
+    name: sample-tailscale
+    envs:
+    - key: TAILSCALE_AUTHKEY
+      value: "tskey-ephemeral-key"
+      type: SECRET

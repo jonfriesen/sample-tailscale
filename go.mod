@@ -1,3 +1,3 @@
-module gitlab.com/snormore/hello
+module github.com/jonfriesen/sample-tailscale
 
-go 1.13
+go 1.16
